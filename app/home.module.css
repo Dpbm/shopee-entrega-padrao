@@ -1,0 +1,93 @@
+.page{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.section{
+    width: 50%;
+    padding: 20px;
+}
+
+.titleText{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    max-width: 800px;
+}
+
+.trackCodeInputArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputLabel{
+    font-size: 25px;
+}
+
+.codeInput{
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    outline: 0;
+    padding: 10px;
+}
+
+.carriersTable{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tableHeader{
+    border-bottom: 1px solid var(--gray); 
+    border-right: 1px solid var(--gray); 
+    padding: 10px;
+}
+
+.carrierInfo{
+    text-align: center;
+    border-right: 1px solid var(--gray); 
+    padding: 10px;
+
+}
+
+.tableHeader:last-child{
+    border-right: 0;
+}
+
+.carrierInfo:last-child{
+    border: 0;
+}
+
+.carrierURL{
+    color: black;
+
+}
+
+.tableCaption{
+    caption-side: bottom;
+    font-size: 12px;
+}
+
+@media (max-width:1000px){
+    .section{
+        width: 60%;
+    }
+}
+
+@media (max-width:770px){
+    .section{
+        width: 80%;
+    }
+}
+
+@media (max-width:550px){
+    .section{
+        width: 100%;
+    }
+}
