@@ -20,8 +20,8 @@ const carriers = [
         match: /^((BR)([0-9]{12})([A-Z]{1}))$|^([0-9]{11})$|^((BR)([0-9]{13}))$/,
     },
     {
-        name: "Shopee Xpress",
-        url: "https://shopeexpress.com.br/",
+        name: "J&T Express",
+        url: "https://www.jtexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
     },
 ];
