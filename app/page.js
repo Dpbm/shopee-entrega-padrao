@@ -24,6 +24,11 @@ const carriers = [
         url: "https://www.jtexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
     },
+    {
+        name: "Total Express",
+        url: "https://totalexpress.com.br/",
+        match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
+    }
 ];
 
 export default function Home() {
