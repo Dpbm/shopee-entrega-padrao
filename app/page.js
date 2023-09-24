@@ -28,6 +28,11 @@ const carriers = [
         name: "Total Express",
         url: "https://totalexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
+    },
+    {
+        name:"Shopee Xpress",
+        url:"https://shopeexpress.com.br/",
+        match: /^((BR)([0-9]{12})([A-Z]{6})([0-9]{6}))$/
     }
 ];
 
@@ -55,7 +60,7 @@ export default function Home() {
                         onChange={(e) =>
                             setTrackCode(e.target.value.toUpperCase())
                         }
-                        maxLength={15}
+                        maxLength={26}
                         value={trackCode}
                     />
                 </div>
