@@ -6,31 +6,37 @@ import styles from "./home.module.css";
 const carriers = [
     {
         name: "Loggi",
+        code: "loggi", 
         url: "https://www.loggi.com/rastreador/",
         match: /^(BR)([0-9]{13})$/,
     },
     {
         name: "Correios",
+        code: "correios",
         url: "https://rastreamento.correios.com.br/app/index.php",
         match: /^([A-Z]{2})([0-9]{9})(BR)$/,
     },
     {
         name: "PotSpeed",
+        code: "potspeed",
         url: "https://www.potspeed.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$|^([0-9]{11})$|^((BR)([0-9]{13}))$/,
     },
     {
         name: "J&T Express",
+        code:"jtexpress",
         url: "https://www.jtexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
     },
     {
         name: "Total Express",
+        code: "totalexpress",
         url: "https://totalexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{1}))$/,
     },
     {
         name:"Shopee Xpress",
+        code:"shopeexpress",
         url:"https://shopeexpress.com.br/",
         match: /^((BR)([0-9]{12})([A-Z]{6})([0-9]{6}))$/
     }
@@ -91,7 +97,7 @@ export default function Home() {
                                     </a>
                                 </td>
 
-                                <td className={styles.carrierInfo}>
+                                <td className={styles.carrierInfo} id={`${carrier.code}-check`}>
                                     {carrier.match.test(trackCode)
                                         ? "✅"
                                         : "❌"}
