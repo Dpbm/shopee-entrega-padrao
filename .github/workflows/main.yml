@@ -8,6 +8,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
+            - name: PNPM install
+              run: npm install -g pnpm
             - name: Cypress run
               uses: cypress-io/github-action@v6
               with:
