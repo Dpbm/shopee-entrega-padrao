@@ -1,7 +1,9 @@
 # syntax=docker/dockerfile:1
 FROM node:18-alpine
-WORKDIR /app
-COPY . .
-RUN npm install -g pnpm && pnpm install && pnpm build
-CMD ["pnpm", "start"]
+WORKDIR /src
+COPY package.json pnpm-lock.yaml /src/
+RUN npm install -g pnpm && pnpm install --production
+COPY . /src
+RUN pnpm build
 EXPOSE 3000
+CMD ["pnpm", "start"]

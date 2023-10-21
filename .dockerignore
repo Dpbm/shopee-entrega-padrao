@@ -7,3 +7,4 @@ node_modules
 .editorconfig
 cypress*
 *git*
+docker-compose.yaml
