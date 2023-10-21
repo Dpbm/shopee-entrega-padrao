@@ -1,8 +1,11 @@
-name: Test-Deploy
+name: Test-Deploy-Production
 env:
     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-on: push
+on:
+    push:
+        branches:
+            - main
 jobs:
     cypress-run:
         runs-on: ubuntu-latest
