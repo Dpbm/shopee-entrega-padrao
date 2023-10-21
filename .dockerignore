@@ -1,0 +1,9 @@
+node_modules
+.next
+.vercel
+*.md
+.vscode
+.tool-versions
+.editorconfig
+cypress*
+*git*
