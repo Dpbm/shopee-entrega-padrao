@@ -9,3 +9,5 @@ cypress*
 *git*
 docker-compose.yaml
 assets/*
+*.env
+*.secrets
