@@ -2,6 +2,11 @@
 
 ![screenshot](./assets/screenshot.png)
 
+![dockerhub workflow](https://github.com/Dpbm/shopee-entrega-padrao/actions/workflows/dockerhub.yml/badge.svg)
+![ghrc workflow](https://github.com/Dpbm/shopee-entrega-padrao/actions/workflows/ghrc.yml/badge.svg)
+![preview workflow](https://github.com/Dpbm/shopee-entrega-padrao/actions/workflows/preview.yml/badge.svg)
+![production workflow](https://github.com/Dpbm/shopee-entrega-padrao/actions/workflows/production.yml/badge.svg)
+
 Este projeto tem como finalidade ajudar você a descobrir quais são as possíveis transportadoras para a sua entrega da Shopee.
 
 ## Como executar
